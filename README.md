@@ -11,14 +11,14 @@ and sets ptz configuration
 * Connect with a websocket client
 
 ```
-.json
 {
-	"deviceName": "/dev/video0",
-	"inputSettings": {
+	"operation": "move",
+	"options": {
+		"device": "/dev/video0",
 		"pan": 10000,
 		"tilt": 10000,
 		"zoom": 100
-		}
+	}
 }
 ```
 
@@ -28,3 +28,14 @@ There isn't any atm, will prbably add websocket authentication
 and input validation.
 
 DO NOT USE THIS SOFTWARE
+
+## Future plans
+
+* [] List devices
+* [] Use device name instead of /in addition to path
+* [] Relative movement option (ie: pan + 10, zoom - 30)
+* [] Saving commands/Trigger saved commands
+* [] Program arguments ( eg: listen address, port )
+* [] Web interface to do all these things
+
+
